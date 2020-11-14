@@ -1,0 +1,16 @@
+[2020-03-26 16:51:54.174] - 14060 INFO [restartedMain] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2020-03-26 16:51:54.179] - 14060 INFO [restartedMain] --- org.apache.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2020-03-26 16:51:54.217] - 14060 INFO [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
+[2020-03-26 16:52:02.028] - 14060 INFO [http-nio-8090-exec-2] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-03-26 16:52:48.713] - 14060 INFO [Thread-35] --- org.apache.catalina.core.StandardService: Stopping service [Tomcat]
+[2020-03-26 16:52:48.729] - 14060 INFO [Thread-35] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2020-03-26 16:52:48.753] - 14060 WARNING [Thread-35] --- org.apache.catalina.loader.WebappClassLoaderBase: The web application [ROOT] appears to have started a thread named [RxComputationScheduler-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1081)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
